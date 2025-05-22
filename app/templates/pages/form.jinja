@@ -1,0 +1,45 @@
+{% extends 'pages/base.jinja' %}
+
+{% block title %}
+    Flask Demo - About
+{% endblock %}
+
+
+{% block content %}
+  <article>
+    <h2>A lovley Form</h2>
+
+
+    <form method="POST" action="/processform">
+        
+      <fieldset>
+          <label>
+            your Name
+            <input
+                name="name"
+                type="text"
+                placeholder="Your Name"
+                required
+            >
+            
+          </label>
+
+          <label>
+              Your Age
+              <input
+                name="age"
+                type="number"
+                placeholder="Your age"
+                min="0"
+                max="100"
+                required
+              >
+          </label>
+        
+      </fieldset>
+
+      <input type="submit" value="send off the data"
+    </form>
+
+  </article>  
+{% endblock %}
