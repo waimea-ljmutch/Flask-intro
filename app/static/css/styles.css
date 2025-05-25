@@ -1,7 +1,7 @@
 article#random {
     font-size: 12rem;
     text-align: center;
-    color: var(--pico-primary);
+    color: var( --pico-primary-- );
     font-weight: bold;
     line-height: 1.1;
 }
